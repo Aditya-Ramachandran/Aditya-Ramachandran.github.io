@@ -1,0 +1,41 @@
+body {
+  width: 100%;
+  font-family: 'Lato';
+  font-size: 1.18rem;
+  line-height: 1.25;
+}
+
+#container {
+  max-width: 800px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* This centers the container */
+  padding: 20px; /* Add some padding to the container if desired */
+  box-sizing: border-box; /* This ensures that padding is included in the total width */
+}
+
+
+h1 {
+  font-family: 'Playfair Display';
+}
+
+
+a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.messy-grid {
+  display: grid;
+  /* grid-template-columns: repeat(2, minmax(200px, 1fr)); Two columns with minimum width of 200px */
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px; /* Add some spacing between grid items */
+
+}
+
+
+.messy-grid img {
+
+  width: 100%; /* Ensure images fill the grid item */
+  height: 100%; /* Ensure images fill the grid item */
+  object-fit: cover; /* Maintain aspect ratio while filling the grid item */
+  border-radius: 10px;
+}
